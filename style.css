@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+body{
+    color: #fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3568a7;
+    transition: 0.5s linear;
+}
+.logo img{
+    width: 60px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: #000;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar a:hover{
+    background-color:#f9c9b6;
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx{
+    margin-right: .4rem !important;
+    transform: scale(1.5);
+    color: #fff;
+}
+.header-icon .bx:hover{
+    color: aqua;
+}
+#menu-icon{
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    z-index: 100001;
+}
+/**************** home section *******************/
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: url("D:/Octanet_Intern/Photo/b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-family: 'PT Serif', serif;
+    margin-left: 1.3rem;
+    font-size: 3.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-text p{
+    margin-left: 1.3rem;
+    font-size: 0.93rem;
+    letter-spacing: 1.1px;
+    color: #fff;
+    margin: 0.5rem 0.14rem; 
+}
+.btn{
+    margin-left: 1.3rem;
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: #52def0;
+    transition: .2s all ease;
+    font-weight: 500;
+    color: #1b1919;
+}
+.btn:hover{
+    outline: 1px solid #fff;
+    transform: scale(.98);
+    background: #f9c9b6;
+}
+/**************************** About section *******************************/
+.about{
+    height: 100vh;
+    background-color: #404040;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    margin-left: 15px;
+    margin-top: 1px;
+    border-radius: 1.5rem;
+    max-width: 80vh;
+    max-height: 80vh;
+}
+.about-text h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: orangered;
+}
+.about-text p{
+    font-family: 'Poppins', sans-serif;
+    color: #e3dcdc;
+    font-size: 1rem;
+    margin: 0.5rem 0 1.1rem;
+}
+
+/********************* Menu section *****************************/
+.menu{
+    background-color: #333333;
+    width: 100%;
+    height: 90vh;
+}
+.menu .menu-header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-header h3{
+    color: orangered;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 40px;
+    font-style: none;
+}
+.menu-header h4{
+    color: orangered;
+    padding: 10px 20px;
+}
+.menu .menu-content{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+.menu .menu-content .hot-coffees, .hot-coffees-image img{
+    border-radius: 50%;
+    display: grid;
+    max-height: 30vh;
+}
+.menu .menu-content .cold-coffees, .cold-coffees-image img{
+    border-radius: 50%;
+    display: grid;
+    max-height: 30vh;
+}
+.menu .menu-content .cappuccino, .cappuccino img{
+    border-radius: 50%;
+    display: grid;
+    max-height: 30vh;
+}
+.menu .menu-content .hot-coffees-body, .cold-coffees-body, .Cappuccino-body{
+    text-align: center;
+    margin-top: 10px;
+}
+.menu .menu-content .hot-coffees-body h2, .cold-coffees-body h2, .Cappuccino-body h2{
+    color: orangered;
+}
+.menu .menu-content .hot-coffees-body label, .cold-coffees-body label ,.Cappuccino-body label{
+    margin-top: 10px;
+    color: white;
+}
+
+
+/*********************** Contact section ******************************/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 2px solid #333333;
+}
+.contact .contact-box{
+    flex: 1;
+}
+.contact .contact-box .contact-image, .contact .contact-box .contact-body{
+    height: 100%;
+}
+.contact img{
+    width: 100%;
+    height: 100%; 
+    background-color: #f0ad5c;
+}
+.contact-image img{
+    opacity: .9;
+}
+.contact-body{
+    background-color: #404040;
+    height: 100%;
+    border-left: 2px solid #333333;
+}
+.contact-body form{
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+.contact-body h2{
+    color: orangered;
+}
+form .form-content{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 1px solid lightgray;
+}
+form .form-content input{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+form .form-content label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    color: rgb(171, 168, 168);
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition:all .5s ease;
+    pointer-events: none;
+}
+form .form-content span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    transform: .4s;
+}
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+    top: -5px;
+    color: orangered;
+}
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before{
+    width: 100%;
+}
+.contact-body form button{
+    border-radius: 0.3rem;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: #52def0;
+    color: #000;
+    border: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+.contact-body form button:hover{
+    background-color: #f9c9b6;
+}
+
+/****************** Footer *********************/
+.footer{
+    background-color: #404040;
+    border-top: 2px solid #333333;
+}
+.footer .footer-box{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer-box .social-media a{
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 28px;
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+}
+.footer .footer-box .social-media a i{
+    font-size: 25px;
+}
+.footer .footer-box .social-media a:hover{
+    color: #87e1ef;
+    opacity: .7;
+    transition: all .6s ease;
+}
+.footer .footer-box .copyright{
+    color: white;
+    font-size: 20px;
+}
+.footer .footer-box .brand{
+    color: white;
+    font-size: 20px;
+}
+.footer .footer-box .brand span{
+    color: orange;
+}
